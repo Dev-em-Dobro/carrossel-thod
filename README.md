@@ -1,6 +1,6 @@
-# The Last of Us - Carrossel
+# The House Of Dragons - Dragons - Carrossel
 
-Um carrossel de imagens da série The Last Of Us. 
+Um carrossel de imagens dos dragões da série The House Of Dragons - Todas as imagens foram geradas por IA.
 
 # Tecnologias usadas
 
