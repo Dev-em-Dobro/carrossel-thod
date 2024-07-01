@@ -2,6 +2,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	max-width: 1280px;
 	margin: 0 auto;
+  
 }
 
 main:after {
@@ -66,33 +67,6 @@ main:after {
 
 .botoes-carrossel .botao.selecionado {
 	background-color: #1d8346;
-}
-
-.menu-lateral {
-	position: fixed;
-	width: 80px;
-	top: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-}
-
-.menu-lateral ul {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-}
-
-.menu-lateral .icone {
-	width: 30px;
-	filter: invert(1);
-	transition: 0.3s ease-in-out;
-}
-
-.menu-lateral .icone:hover {
-	transform: scale(1.2);
 }
 
 .carrossel {
