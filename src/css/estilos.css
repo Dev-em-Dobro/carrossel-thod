@@ -48,7 +48,7 @@ body {
 	line-height: 40px;
 	height: 300px;
 	overflow: auto;
-	padding: 15px;
+	padding-right: 15px;
 }
 
 .botoes-carrossel {
