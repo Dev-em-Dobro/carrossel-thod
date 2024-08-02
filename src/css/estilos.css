@@ -1,4 +1,5 @@
 body {
+	background-color: aqua;
 	font-family: "Poppins", sans-serif;
 	max-width: 1280px;
 	margin: 0 auto;
@@ -9,22 +10,20 @@ body {
 	src: url(../fontes/GOT.ttf);
 }
 
-.logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 200px;
-}
-
-main:after {
-	content: "";
-	min-height: 100vh;
-	width: 100vw;
+.carrossel {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	width: 100%;
 	z-index: -1;
+}
+
+.informacoes {
+	display: none;
+}
+
+.informacoes.ativa {
+	display: block;
 }
 
 .conteudo {
@@ -33,12 +32,6 @@ main:after {
 	min-height: 100vh;
 	justify-content: space-evenly;
 }
-.informacoes {
-	display: none;
-}
-.informacoes.ativa {
-	display: block;
-}
 
 .informacoes h1 {
 	font-size: 35px;
@@ -46,12 +39,6 @@ main:after {
 	margin-bottom: 80px;
 	font-family: "GOT";
 	letter-spacing: 8px;
-}
-
-.informacoes .logo {
-	max-width: 350px;
-	filter: invert(1);
-	margin-bottom: 80px;
 }
 
 .informacoes .descricao {
@@ -84,14 +71,6 @@ main:after {
 	background-color: #1d8346;
 }
 
-.carrossel {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-}
-
 .imagem {
 	width: 100vw;
 	height: 100vh;
@@ -104,11 +83,14 @@ main:after {
 	animation: mudarImagem 0.7s;
 }
 
-@keyframes mudarImagem {
-	from {
-		opacity: 0.85;
-	}
-	to {
-		opacity: 1;
-	}
+main:after {
+	content: "";
+	min-height: 100vh;
+	width: 100vw;
+	background-color: blue;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
 }
